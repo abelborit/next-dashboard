@@ -1,0 +1,28 @@
+{
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "^vite$",
+    "",
+    "^react$",
+    "",
+    "^react-router$",
+    "",
+    "^vitest$",
+    "",
+    "^@testing-library/(.*)$",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^#/(?!modules)(.*)$",
+    "",
+    "^#/modules/shared/(.*)$",
+    "",
+    "^#/modules/(.*)$",
+    "",
+    "^(?!./style?s$)[.]",
+    "",
+    "^./style?s$"
+  ],
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+  "importOrderTypeScriptVersion": "5.7.2"
+}
