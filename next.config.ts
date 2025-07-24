@@ -1,6 +1,6 @@
 /* https://www.timsanteford.com/posts/how-to-use-biome-with-next-js-for-linting-and-formatting/ */
 /* https://github.com/vercel/next.js/discussions/59347 */
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
