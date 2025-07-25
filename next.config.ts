@@ -9,6 +9,15 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  /* cuando estamos usando imágenes que están fuera de nuestro dominio, es decir, imágenes que están afuera como de "unsplash" tenemos que realizar una configuración para decirle a Next que "puede confiar" en esa imagen que se quiere colocar */
+  images: {
+    remotePatterns: [
+      {
+        hostname: 'images.unsplash.com',
+        protocol: 'https',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
