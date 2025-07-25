@@ -13,7 +13,8 @@
     "format:biome": "biome format .",
     "format:biome:fix": "biome format . --write",
     "check:biome": "npm run lint:biome && npm run format:biome",
-    "fix:biome": "npm run prettier:order-imports && npm run lint:biome:fix && npm run format:biome:fix"
+    "fix:biome": "npm run lint:biome:fix && npm run format:biome:fix",
+    "fix:biome:prettier": "npm run prettier:order-imports && npm run lint:biome:fix && npm run format:biome:fix"
   },
   "dependencies": {
     "next": "15.4.4",
